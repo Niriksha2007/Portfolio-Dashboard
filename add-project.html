@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Add New Project | COE Portfolio Command Center</title>
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <link rel="stylesheet"
+          href="css/form.css">
+
+</head>
+
+<body>
+
+<div class="form-page">
+
+    <header class="page-header">
+
+        <div class="header-left">
+
+            <a href="index.html" class="back-btn">
+
+                <i class="fa-solid fa-arrow-left"></i>
+
+            </a>
+
+            <div>
+
+                <h1>Add New Project</h1>
+
+                <p>Create a new project in the COE Portfolio Command Center</p>
+
+            </div>
+
+        </div>
+
+        <div class="header-right">
+
+            <div class="user-info">
+
+                <div class="avatar">
+                    AG
+                </div>
+
+                <div>
+
+                    <h4>Anvit Gupta</h4>
+
+                    <span>Senior Manager</span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <form id="projectForm">
+
+        <section class="form-card">
+
+            <div class="section-title">
+
+                <i class="fa-solid fa-folder-open"></i>
+
+                <h2>Project Information</h2>
+
+            </div>
+
+            <div class="form-grid">
+
+
+                <div class="form-group">
+
+                    <label for="projectName">
+
+                       
+
+                    </label>
+
+                    <input
+                        type="text"
+                        id="projectName"
+                        name="projectName"
+                        placeholder="Enter project name"
+                        required>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label for="projectId">
+
+                    </label>
+
+                    <input
+                        type="text"
+                        id="projectId"
+                        name="projectId"
+                        placeholder="e.g. DE-1001"
+                        required>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label for="pod">
+
+                    </label>
+
+                    <select id="pod"
+                            name="pod"
+                            required>
+
+                        <option value="">Select POD</option>
+
+                        <option>Service Delight Pod</option>
+
+                        <option>Digital Experience Pod</option>
+
+                        <option>Data & Analytics Pod</option>
+
+                        <option>Platform Engineering Pod</option>
+
+                        <option>Security & Compliance Pod</option>
+
+                        <option>Enterprise Ops Pod</option>
+
+                    </select>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label for="projectManager">
+
+                        Project Manager *
+
+                    </label>
+
+                    <input
+                        type="text"
+                        id="projectManager"
+                        placeholder="Enter project manager"
+                        required>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label for="businessOwner">
+
+                        Business Owner
+
+                    </label>
+
+                    <input
+                        type="text"
+                        id="businessOwner"
+                        placeholder="Enter business owner">
+
+                </div>
+
+                <div class="form-group">
+
+                    <label for="vertical">
+
+                        Vertical
+
+                    </label>
+
+                    <select id="vertical">
+
+                        <option>Choose Vertical</option>
+
+                        <option>Banking</option>
+
+                        <option>Retail</option>
+
+                        <option>Healthcare</option>
+
+                        <option>Manufacturing</option>
+
+                        <option>Insurance</option>
+
+                        <option>Telecom</option>
+
+                    </select>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label for="priority">
+
+                        Priority
+
+                    </label>
+
+                    <select id="priority">
+
+                        <option>Medium</option>
+
+                        <option>Low</option>
+
+                        <option>High</option>
+
+                        <option>Critical</option>
+
+                    </select>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label for="stage">
+
+                        Current Stage
+
+                    </label>
+
+                    <select id="stage">
+
+                        <option>DEFINE</option>
+
+                        <option>DESIGN</option>
+
+                        <option>BUILD</option>
+
+                        <option>TEST</option>
+
+                        <option>UAT</option>
+
+                        <option>GO LIVE</option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+        </section>
+               
+        <section class="form-card">
+
+            <div class="section-title">
+
+                <i class="fa-solid fa-calendar-days"></i>
+
+                <h2>Timeline</h2>
+
+            </div>
+
+            <div class="form-grid">
+
+                <div class="form-group">
+
+                    <label for="startDate">
+
+                        Start Date *
+
+                    </label>
+
+                    <input
+                        type="date"
+                        id="startDate"
+                        name="startDate"
+                        required>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label for="endDate">
+
+                        End Date *
+
+                    </label>
+
+                    <input
+                        type="date"
+                        id="endDate"
+                        name="endDate"
+                        required>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label for="goLive">
+
+                        Go-Live Date
+
+                    </label>
+
+                    <input
+                        type="date"
+                        id="goLive"
+                        name="goLive">
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="form-card">
+
+            <div class="section-title">
+
+                <i class="fa-solid fa-indian-rupee-sign"></i>
+
+                <h2>Budget Details</h2>
+
+            </div>
+
+            <div class="form-grid">
+
+                <div class="form-group">
+
+                    <label for="plannedBudget">
+
+                        Planned Budget
+
+                    </label>
+
+                    <input
+                        type="number"
+                        id="plannedBudget"
+                        placeholder="₹ 0.00">
+
+                </div>
+
+                <div class="form-group">
+
+                    <label for="actualBudget">
+
+                        Actual Budget
+
+                    </label>
+
+                    <input
+                        type="number"
+                        id="actualBudget"
+                        placeholder="₹ 0.00">
+
+                </div>
+
+                <div class="form-group">
+
+                    <label for="currency">
+
+                        Currency
+
+                    </label>
+
+                    <select id="currency">
+
+                        <option>INR</option>
+                        <option>USD</option>
+                        <option>EUR</option>
+                        <option>GBP</option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="form-card">
+
+            <div class="section-title">
+
+                <i class="fa-solid fa-chart-line"></i>
+
+                <h2>Project Status</h2>
+
+            </div>
+
+            <div class="form-grid">
+
+                <div class="form-group">
+
+                    <label for="health">
+
+                        Health
+
+                    </label>
+
+                    <select id="health">
+
+                        <option>Green</option>
+                        <option>Amber</option>
+                        <option>Red</option>
+
+                    </select>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label for="status">
+
+                        Status
+
+                    </label>
+
+                    <select id="status">
+
+                        <option>On Track</option>
+                        <option>Delayed</option>
+                        <option>At Risk</option>
+                        <option>Completed</option>
+                        <option>On Hold</option>
+
+                    </select>
+
+                </div>
+
+                <div class="form-group full-width">
+
+                    <label>
+
+                        Completion %
+
+                    </label>
+
+                    <input
+                        type="range"
+                        id="progress"
+                        min="0"
+                        max="100"
+                        value="25">
+
+                    <div class="progress-value">
+
+                        <span id="progressText">
+
+                            25%
+
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="form-card">
+
+            <div class="section-title">
+
+                <i class="fa-solid fa-triangle-exclamation"></i>
+
+                <h2>Risk Information</h2>
+
+            </div>
+
+            <div class="form-grid">
+
+                <div class="form-group">
+
+                    <label>
+
+                        Risk Level
+
+                    </label>
+
+                    <select id="riskLevel">
+
+                        <option>Low</option>
+                        <option>Medium</option>
+                        <option>High</option>
+                        <option>Critical</option>
+
+                    </select>
+
+                </div>
+
+                <div class="form-group full-width">
+
+                    <label>
+
+                        Risk Description
+
+                    </label>
+
+                    <textarea
+                        id="riskDescription"
+                        rows="4"
+                        placeholder="Describe current project risks..."></textarea>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="form-card">
+
+            <div class="section-title">
+
+                <i class="fa-solid fa-users"></i>
+
+                <h2>Resources</h2>
+
+            </div>
+
+            <div class="form-grid">
+
+                <div class="form-group">
+
+                    <label>
+
+                        Team Size
+
+                    </label>
+
+                    <input
+                        type="number"
+                        id="teamSize"
+                        min="1"
+                        value="5">
+
+                </div>
+
+                <div class="form-group">
+
+                    <label>
+
+                        Technology
+
+                    </label>
+
+                    <input
+                        type="text"
+                        id="technology"
+                        placeholder="React, Angular, Java...">
+
+                </div>
+
+                <div class="form-group">
+
+                    <label>
+
+                        Vendor
+
+                    </label>
+
+                    <input
+                        type="text"
+                        id="vendor"
+                        placeholder="Vendor name">
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="form-card">
+
+            <div class="section-title">
+
+                <i class="fa-solid fa-cloud-arrow-up"></i>
+
+                <h2>Project Documents</h2>
+
+            </div>
+
+            <div class="upload-area" id="dropZone">
+
+                <i class="fa-solid fa-file-arrow-up"></i>
+
+                <h3>
+
+                    Drag & Drop Files Here
+
+                </h3>
+
+                <p>
+
+                    or click below to browse
+
+                </p>
+
+                <input
+                    type="file"
+                    id="projectFiles"
+                    multiple
+                    hidden>
+
+                <button
+                    type="button"
+                    class="btn btn-outline"
+                    id="browseFiles">
+
+                    Browse Files
+
+                </button>
+
+            </div>
+
+            <div id="fileList"></div>
+
+        </section>
+
+        <div class="form-actions">
+
+            <button
+                type="reset"
+                class="btn btn-secondary">
+
+                <i class="fa-solid fa-arrow-rotate-left"></i>
+
+                Reset
+
+            </button>
+
+            <button
+                type="button"
+                class="btn btn-outline"
+                id="saveDraft">
+
+                <i class="fa-solid fa-floppy-disk"></i>
+
+                Save Draft
+
+            </button>
+
+            <button
+                type="submit"
+                class="btn btn-primary">
+
+                <i class="fa-solid fa-paper-plane"></i>
+
+                Submit Project
+
+            </button>
+
+        </div>
+
+    </form>
+
+</div>
+
+<script src="js/form.js"></script>
+
+</body>
+
+</html>

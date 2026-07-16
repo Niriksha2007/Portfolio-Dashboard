@@ -1,0 +1,1088 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>
+        COE Portfolio Command Center
+    </title>
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <link rel="stylesheet"
+          href="css/style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body>
+
+<div class="dashboard">
+
+<aside class="sidebar">
+
+    <div class="brand">
+
+        <div class="brand-logo">
+
+            <i class="fa-solid fa-layer-group"></i>
+
+        </div>
+
+        <div class="brand-text">
+
+            <h2>Digital Enterprise</h2>
+
+            <span>Delivery control tower</span>
+
+        </div>
+
+    </div>
+
+    <ul class="menu">
+
+        <li class="active">
+
+            <i class="fa-solid fa-table-columns"></i>
+
+            <span>Command Center</span>
+
+        </li>
+
+        <li>
+
+            <i class="fa-solid fa-folder-tree"></i>
+
+            <span>Portfolio</span>
+
+        </li>
+
+        <li>
+
+            <i class="fa-solid fa-users"></i>
+
+            <span>POD View</span>
+
+        </li>
+
+        <li>
+
+            <i class="fa-solid fa-shield-halved"></i>
+
+            <span>Governance</span>
+
+        </li>
+
+        <li>
+
+            <i class="fa-solid fa-triangle-exclamation"></i>
+
+            <span>Risks & Actions</span>
+
+        </li>
+
+        <li>
+
+            <i class="fa-solid fa-flag-checkered"></i>
+
+            <span>Milestones</span>
+
+        </li>
+
+        <li>
+
+            <i class="fa-solid fa-indian-rupee-sign"></i>
+
+            <span>Finance</span>
+
+        </li>
+
+        <li>
+
+            <i class="fa-solid fa-database"></i>
+
+            <span>Master Data</span>
+
+        </li>
+
+        <li>
+
+            <i class="fa-solid fa-chart-column"></i>
+
+            <span>Reports</span>
+
+        </li>
+
+        <li>
+
+            <i class="fa-solid fa-gear"></i>
+
+            <span>Settings</span>
+
+        </li>
+
+    </ul>
+
+    <div class="quick-links">
+
+        <h4>Quick Links</h4>
+
+        <button class="quick-btn">
+
+            <i class="fa-solid fa-plus"></i>
+
+            Project Intake
+
+        </button>
+
+    </div>
+
+</aside>
+
+<main class="main-content">
+
+<header class="top-header">
+
+    <div class="title-area">
+
+        <h1>
+
+            COE Portfolio Command Center
+
+        </h1>
+
+        <p>
+
+            One View. One Governance. One Delivery
+
+        </p>
+
+    </div>
+
+    <div class="header-right">
+
+        <div class="top-metric">
+
+            <span>Projects</span>
+
+            <h2>99</h2>
+
+        </div>
+
+        <div class="top-metric">
+
+            <span>PODs</span>
+
+            <h2>6</h2>
+
+        </div>
+
+        <div class="top-metric">
+
+            <span>Risks</span>
+
+            <h2>55</h2>
+
+        </div>
+
+        <div class="top-metric">
+
+            <span>Near Go-Live</span>
+
+            <h2>5</h2>
+
+        </div>
+
+        <div class="profile">
+
+            <div class="avatar">
+
+                AG
+
+            </div>
+
+            <div>
+
+                <h4>Anvit Gupta</h4>
+
+                <span>Senior Manager</span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</header>
+
+<section class="filter-section">
+
+    <div class="filter-grid">
+
+
+        <div class="filter-box">
+
+            <label>POD</label>
+
+            <select id="pod">
+
+                <option>All</option>
+                <option>Service Delight Pod</option>
+                <option>Digital Experience Pod</option>
+                <option>Data & Analytics Pod</option>
+                <option>Platform Engineering Pod</option>
+                <option>Security & Compliance Pod</option>
+                <option>Enterprise Ops Pod</option>
+
+            </select>
+
+        </div>
+
+
+        <div class="filter-box">
+
+            <label>Project Manager</label>
+
+            <select id="pm">
+
+                <option>All</option>
+
+            </select>
+
+        </div>
+
+
+        <div class="filter-box">
+
+            <label>Vertical</label>
+
+            <select id="vertical">
+
+                <option>All</option>
+
+            </select>
+
+        </div>
+
+
+        <div class="filter-box">
+
+            <label>Current Stage</label>
+
+            <select id="stage">
+
+                <option>All</option>
+                <option>DEFINE</option>
+                <option>DESIGN</option>
+                <option>BUILD</option>
+                <option>TEST</option>
+                <option>GO LIVE</option>
+
+            </select>
+
+        </div>
+
+
+        <div class="filter-box">
+
+            <label>Status</label>
+
+            <select id="status">
+
+                <option>All</option>
+                <option>On Track</option>
+                <option>Delayed</option>
+                <option>At Risk</option>
+                <option>Completed</option>
+                <option>Blocked</option>
+
+            </select>
+
+        </div>
+
+
+        <div class="filter-buttons">
+
+            <button class="btn btn-primary">
+
+                <i class="fa-solid fa-plus"></i>
+
+                Add New Project
+
+            </button>
+
+            <button class="btn btn-outline">
+
+                <i class="fa-solid fa-rotate-left"></i>
+
+                Reset Filters
+
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="portfolio-section">
+
+    <div class="section-title">
+
+        <div>
+
+            <small>PORTFOLIO</small>
+
+            <h2>Projects</h2>
+
+        </div>
+
+    </div>
+
+    <div class="portfolio-cards">
+
+
+        <div class="portfolio-card">
+
+            <div class="card-icon blue">
+
+                <i class="fa-solid fa-folder"></i>
+
+            </div>
+
+            <div class="card-content">
+
+                <h3>99</h3>
+
+                <span>Total Project</span>
+
+                <small>Visible portfolio volume</small>
+
+            </div>
+
+        </div>
+
+
+        <div class="portfolio-card">
+
+            <div class="card-icon green">
+
+                <i class="fa-solid fa-circle-check"></i>
+
+            </div>
+
+            <div class="card-content">
+
+                <h3>24</h3>
+
+                <span>On Track</span>
+
+                <small>24%</small>
+
+            </div>
+
+        </div>
+
+
+        <div class="portfolio-card">
+
+            <div class="card-icon orange">
+
+                <i class="fa-solid fa-clock"></i>
+
+            </div>
+
+            <div class="card-content">
+
+                <h3>11</h3>
+
+                <span>Delayed</span>
+
+                <small>11%</small>
+
+            </div>
+
+        </div>
+
+        <div class="portfolio-card">
+
+            <div class="card-icon purple">
+
+                <i class="fa-solid fa-triangle-exclamation"></i>
+
+            </div>
+
+            <div class="card-content">
+
+                <h3>20</h3>
+
+                <span>At Risk / Intervention</span>
+
+                <small>20%</small>
+
+            </div>
+
+        </div>
+
+
+        <div class="portfolio-card">
+
+            <div class="card-icon cyan">
+
+                <i class="fa-solid fa-flag-checkered"></i>
+
+            </div>
+
+            <div class="card-content">
+
+                <h3>24</h3>
+
+                <span>Completed / Done</span>
+
+                <small>24%</small>
+
+            </div>
+
+        </div>
+
+        <div class="portfolio-card">
+
+            <div class="card-icon gray">
+
+                <i class="fa-solid fa-ban"></i>
+
+            </div>
+
+            <div class="card-content">
+
+                <h3>6</h3>
+
+                <span>On Hold / Blocked</span>
+
+                <small>06%</small>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="dashboard-grid">
+    
+<div class="left-column">
+
+   
+
+    <div class="dashboard-card">
+
+        <div class="card-header">
+
+            <div>
+
+                <small>GOVERNANCE</small>
+
+                <h3>Portfolio Health Overview</h3>
+
+            </div>
+
+        </div>
+
+        <div class="portfolio-health">
+
+            <div class="chart-container">
+
+                <canvas id="portfolioChart"></canvas>
+
+            </div>
+
+            <div class="health-summary">
+
+                <div class="health-item">
+
+                    <span class="dot green"></span>
+
+                    <span>On Track</span>
+
+                    <strong>24 (24%)</strong>
+
+                </div>
+
+                <div class="health-item">
+
+                    <span class="dot orange"></span>
+
+                    <span>Delayed</span>
+
+                    <strong>11 (11%)</strong>
+
+                </div>
+
+                <div class="health-item">
+
+                    <span class="dot red"></span>
+
+                    <span>At Risk</span>
+
+                    <strong>20 (20%)</strong>
+
+                </div>
+
+                <div class="health-item">
+
+                    <span class="dot blue"></span>
+
+                    <span>Done</span>
+
+                    <strong>24 (24%)</strong>
+
+                </div>
+
+                <div class="health-item">
+
+                    <span class="dot gray"></span>
+
+                    <span>On Hold</span>
+
+                    <strong>06 (06%)</strong>
+
+                </div>
+
+                <div class="health-item">
+
+                    <span class="dot light"></span>
+
+                    <span>Not Started</span>
+
+                    <strong>14 (14%)</strong>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="dashboard-card">
+
+        <div class="card-header">
+
+            <h3>POD Summary</h3>
+
+        </div>
+
+        <div class="table-responsive">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>POD</th>
+
+                        <th>Projects</th>
+
+                        <th>On Track</th>
+
+                        <th>At Risk</th>
+
+                        <th>Delayed</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+
+                        <td>Service Delight Pod</td>
+
+                        <td>39</td>
+
+                        <td>14</td>
+
+                        <td>08</td>
+
+                        <td>06</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>Digital Experience Pod</td>
+
+                        <td>18</td>
+
+                        <td>08</td>
+
+                        <td>04</td>
+
+                        <td>03</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>Data & Analytics Pod</td>
+
+                        <td>16</td>
+
+                        <td>06</td>
+
+                        <td>03</td>
+
+                        <td>02</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>Platform Engineering Pod</td>
+
+                        <td>14</td>
+
+                        <td>05</td>
+
+                        <td>03</td>
+
+                        <td>02</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>Security & Compliance Pod</td>
+
+                        <td>08</td>
+
+                        <td>03</td>
+
+                        <td>01</td>
+
+                        <td>02</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>Enterprise Ops Pod</td>
+
+                        <td>04</td>
+
+                        <td>02</td>
+
+                        <td>01</td>
+
+                        <td>00</td>
+
+                    </tr>
+
+                </tbody>
+
+                <tfoot>
+
+                    <tr>
+
+                        <th>TOTAL</th>
+
+                        <th>99</th>
+
+                        <th>38</th>
+
+                        <th>20</th>
+
+                        <th>15</th>
+
+                    </tr>
+
+                </tfoot>
+
+            </table>
+
+        </div>
+
+    </div>
+
+</div>
+
+<div class="right-column">
+
+    <div class="dashboard-card">
+
+        <div class="card-header">
+
+            <h3>Leadership Attention Required</h3>
+
+            <a href="#">View All</a>
+
+        </div>
+
+        <div class="attention-list">
+
+            <div class="attention-card danger">
+
+                <div class="attention-icon">
+
+                    <i class="fa-solid fa-triangle-exclamation"></i>
+
+                </div>
+
+                <div>
+
+                    <h4>17 projects are delayed or on hold</h4>
+
+                    <p>
+                        Open risk concentration requiring governance attention.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="attention-card warning">
+
+                <div class="attention-icon">
+
+                    <i class="fa-solid fa-database"></i>
+
+                </div>
+
+                <div>
+
+                    <h4>38 projects need data cleanup</h4>
+
+                    <p>
+                        Data quality and reporting readiness.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="attention-card info">
+
+                <div class="attention-icon">
+
+                    <i class="fa-solid fa-user-slash"></i>
+
+                </div>
+
+                <div>
+
+                    <h4>6 projects without owner</h4>
+
+                    <p>
+                        Owner assignment required.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="view-all-link">
+
+            <a href="#">
+
+                See all risks &amp; actions
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+<section class="bottom-metrics">
+
+    <!-- Delayed or On Hold -->
+
+    <div class="metric-card">
+
+        <div class="metric-icon red">
+
+            <i class="fa-solid fa-triangle-exclamation"></i>
+
+        </div>
+
+        <div class="metric-content">
+
+            <span>Delayed or On Hold</span>
+
+            <h2>17</h2>
+
+            <p>
+                Projects needing active recovery or unblocks.
+            </p>
+
+        </div>
+
+    </div>
+
+    
+    <div class="metric-card">
+
+        <div class="metric-icon blue">
+
+            <i class="fa-solid fa-rocket"></i>
+
+        </div>
+
+        <div class="metric-content">
+
+            <span>Near Go-Live</span>
+
+            <h2>05</h2>
+
+            <p>
+                Projects planned to go live within 30 days.
+            </p>
+
+        </div>
+
+    </div>
+
+
+
+    <div class="metric-card">
+
+        <div class="metric-icon orange">
+
+            <i class="fa-solid fa-database"></i>
+
+        </div>
+
+        <div class="metric-content">
+
+            <span>Data Quality Gaps</span>
+
+            <h2>38</h2>
+
+            <p>
+                Projects missing owner, POD, stage, or status clarity.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="metric-card">
+
+        <div class="metric-icon purple">
+
+            <i class="fa-solid fa-layer-group"></i>
+
+        </div>
+
+        <div class="metric-content">
+
+            <span>Top Active Stage</span>
+
+            <h2>DEFINE</h2>
+
+            <p>
+                Current stage carrying the largest portfolio load.
+            </p>
+
+        </div>
+
+    </div>
+
+    <div class="metric-card">
+
+        <div class="metric-icon green">
+
+            <i class="fa-solid fa-indian-rupee-sign"></i>
+
+        </div>
+
+        <div class="metric-content">
+
+            <span>Financial Overview</span>
+
+            <h2>₹124.7 Cr.</h2>
+
+            <p>
+                Total committed budget across the portfolio.
+            </p>
+
+        </div>
+
+    </div>
+
+    <div class="metric-card">
+
+        <div class="metric-icon cyan">
+
+            <i class="fa-solid fa-calendar-check"></i>
+
+        </div>
+
+        <div class="metric-content">
+
+            <span>Milestones Due</span>
+
+            <h2>23</h2>
+
+            <p>
+                Key milestones due within the next 30 days.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+</section>
+
+<footer class="dashboard-footer">
+
+    <div class="footer-left">
+
+        <p>
+
+            © 2026 Digital Enterprise
+
+            <span>|</span>
+
+            COE Portfolio Command Center
+
+        </p>
+
+    </div>
+
+    <div class="footer-right">
+
+        <span>
+
+            Version 1.0.0
+
+        </span>
+
+        <span>
+
+            Last Refresh :
+
+            <strong id="lastRefresh">
+
+                --
+
+            </strong>
+
+        </span>
+
+    </div>
+
+</footer>
+
+</main>
+
+</div>
+
+<div class="modal-overlay" id="projectModal">
+
+    <div class="modal">
+
+        <div class="modal-header">
+
+            <h2>Add New Project</h2>
+
+            <button class="close-modal">
+
+                <i class="fa-solid fa-xmark"></i>
+
+            </button>
+
+        </div>
+
+        <div class="modal-body">
+
+            <p>
+
+                Redirecting to Project Intake Form...
+
+            </p>
+
+        </div>
+
+        <div class="modal-footer">
+
+            <button class="btn btn-secondary">
+
+                Cancel
+
+            </button>
+
+            <button class="btn btn-primary">
+
+                Continue
+
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<div class="loading-screen" id="loader">
+
+    <div class="loader">
+
+        <div class="spinner"></div>
+
+        <h3>
+
+            Loading Dashboard...
+
+        </h3>
+
+    </div>
+
+</div>
+
+<div class="toast" id="toast">
+
+    <i class="fa-solid fa-circle-check"></i>
+
+    <span>
+
+        Action completed successfully.
+
+    </span>
+
+</div>
+
+<script src="js/dashboard.js"></script>
+
+</body>
+
+</html>
